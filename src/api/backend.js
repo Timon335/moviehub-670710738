@@ -1,4 +1,6 @@
-const BASE = process.env.REACT_APP_API_URL || '';
+// The public Render API keeps the deployed frontend functional if Vercel's
+// build-time REACT_APP_API_URL variable has not been configured yet.
+const BASE = process.env.REACT_APP_API_URL || 'https://week6-lab-3-n2tf.onrender.com';
 
 export async function apiFetch(path, { method = 'GET', body, token } = {}) {
   const headers = { 'Content-Type': 'application/json' };
