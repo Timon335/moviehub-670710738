@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from '../auth/AuthContext';
-import RequireRole from './RequireRole';
+import { AuthProvider } from '../../auth/AuthContext';
+import RequireRole from '../RequireRole';
 
 function Backoffice() { return <h1>หลังบ้าน</h1>; }
 function LoginPage() { return <h1>หน้า Login</h1>; }
